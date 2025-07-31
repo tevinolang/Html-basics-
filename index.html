@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 + Accessibility & SEO Basics | My Awesome Page</title>
+    <meta name="description" content="A simple, semantic HTML5 page demonstrating accessibility and SEO best practices. This page features a clear structure with a header, navigation, main content, and footer.">
+    <meta name="author" content="Your Name">
+    <link rel="canonical" href="https://www.yourwebsite.com/index.html">
+</head>
+<body>
+    <header role="banner">
+        <h1>My Awesome Page: The Power of Semantic HTML</h1>
+        <p>Exploring foundational concepts of modern web development.</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <section id="introduction">
+            <h2>Introduction to Semantic HTML</h2>
+            <p>Semantic HTML introduces meaning to a web page's structure rather than just presentation. By using tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>, we provide context for both browsers and assistive technologies.</p>
+            <p>This approach improves accessibility for users with screen readers and other disabilities. It also helps search engines understand the hierarchy and importance of your content, which is a key part of on-page SEO.</p>
+        </section>
+
+        <section id="features">
+            <h2>Key Features of this Page</h2>
+            <article aria-labelledby="feature1-heading">
+                <h3 id="feature1-heading">Accessibility First</h3>
+                <p>This page prioritizes accessibility by using ARIA attributes like <code>aria-label</code> and <code>role</code> to clarify the purpose of different sections for screen reader users. The logical heading hierarchy from <code>&lt;h1&gt;</code> to <code>&lt;h3&gt;</code> also makes the content easy to navigate.</p>
+            </article>
+            <article aria-labelledby="feature2-heading">
+                <h3 id="feature2-heading">SEO-Friendly Structure</h3>
+                <p>The use of a descriptive <code>&lt;title&gt;</code> tag and a comprehensive <code>&lt;meta name="description"&gt;</code> helps search engines understand what this page is about. The clear heading structure (<code>h1</code>, <code>h2</code>, <code>h3</code>) helps search engine crawlers index the content correctly, improving the page's discoverability.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Feel free to reach out to learn more about semantic HTML.</p>
+            <address>
+                <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; <time datetime="2025">2025</time> Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
